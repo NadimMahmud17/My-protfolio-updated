@@ -23,7 +23,7 @@ const Contact = () => {
           (result) => {
             console.log(result.text);
             setDone(true);
-            
+            form.reset();
           },
           (error) => {
             console.log(error.text);
@@ -38,8 +38,8 @@ const Contact = () => {
       <div className="w-left">
         <div className="awesome">
           {/* darkMode */}
-          <span style={{color: 'orange'}}>Get in Touch</span>
-          <span>Contact me</span>
+          <span>Get in Touch</span>
+          <span style={{color: 'orange'}}>Contact me</span>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}

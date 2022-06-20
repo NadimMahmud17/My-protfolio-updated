@@ -6,7 +6,20 @@
       /* scroll */
   padding-top: 3rem;
 }
-
+.awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+}
+.awesome>span:nth-child(1){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.awesome>span:nth-child(2){
+    font-size: 3rem;
+    font-weight: bold;
+}
 .c-right{
     display: flex;
     justify-content: center;

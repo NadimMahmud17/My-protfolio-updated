@@ -8,6 +8,7 @@ import Work from './components/Works/Work';
 import Portfolio from './components/Portfolio/Portfolio';
 import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Portfolio></Portfolio>
       <Testimonials></Testimonials>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }
