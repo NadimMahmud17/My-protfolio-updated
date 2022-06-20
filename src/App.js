@@ -7,6 +7,7 @@ import Experience from './components/Experience/Experience';
 import Work from './components/Works/Work';
 import Portfolio from './components/Portfolio/Portfolio';
 import Testimonials from './components/Testimonials/Testimonials';
+import Contact from './components/Contact/Contact';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <Work></Work>
       <Portfolio></Portfolio>
       <Testimonials></Testimonials>
-      <h1>fotter and animation comming soon</h1>
+      <Contact></Contact>
     </div>
   );
 }
