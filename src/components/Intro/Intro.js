@@ -13,7 +13,12 @@ import glassesImg from '../../img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import FloatingButtom from '../FloatingDiv/FloatingButtom';
 
+import { motion } from "framer-motion";
+
 const Intro = () => {
+    
+    const transition = {duratoon: 3, type: 'spring'}
+
     return (
         <div className='intro'>
             <div className="i-left">
@@ -37,15 +42,29 @@ const Intro = () => {
                 <img src={Vectorl} alt="" />
                 <img src={Vector2} alt="" />
                 <img src={boy1} alt="" />
-                <img src={glassesImg} alt="" />
+                <motion.img 
+                initial={{left: "-36%"}}
+                whileInView={{left: "-24%"}}
+                transition={transition}
+                src={glassesImg} alt="" />
 
-                <div style={{top: '-4%', left: '68%'}}>
+                <motion.div
+                initial={{top: "-4%", left: "74%"}}
+                whileInView={{left: "68%"}}
+                transition={transition}
+                className="floatingdiv"
+                style={{top: '-4%', left: '68%'}}>
                     <FloatingDiv></FloatingDiv>
-                </div>
+                </motion.div>
 
-                <div style={{top: '18rem',left: '0rem'}}>
+                <motion.div
+                initial={{ left: "9rem", top: "18rem" }}
+                whileInView={{ left: "0rem" }}
+                transition={transition}
+                className="FlatingButtom"
+                style={{top: '18rem',left: '0rem'}}>
                     <FloatingButtom></FloatingButtom>
-                </div>
+                </motion.div>
     {/* blur div  */}
                     <div className="blur" style={{background:'rgb (238 210 255'}}></div>
 

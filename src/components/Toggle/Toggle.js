@@ -18,9 +18,7 @@ const Toggle = () => {
         <div className='toggle'onClick={handleClick}>
             <BsMoonStars/>
             <BsSun/>
-            <div className="t-button"
-            style = {darkmode? {left: "2px"}:{right: "2px"} }
-            >
+            <div className="t-button" style = {darkmode? {left: "2px"}:{right: "2px"} }>
                 
             </div>
         </div>

@@ -11,7 +11,6 @@ const FloatingDiv = () => {
             <span>Web <br />
             Developer</span> 
             
-            
         </div>
     );
 };
